@@ -37,8 +37,6 @@ def main() -> None:
     # Создание приложения
     application = Application.builder().token(TOKEN).build()
 
-
-
     # Регистрация обработчиков команд
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("admin", admin_command))
